@@ -89,7 +89,7 @@ class Aura
          */
         $this->webpage = new WebPage;
 
-        $this->webpage->url = $page->url(true);
+        $this->webpage->url = $this->org->url . $page->url(false, true);
         $this->webpage->id = $this->webpage->url . '#webpage';
         $this->webpage->title = $page->title() . ' | ' . $this->grav['config']->get('site.title');
         $header = $page->header();

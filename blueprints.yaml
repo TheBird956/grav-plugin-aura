@@ -1,7 +1,7 @@
 name: Aura
 slug: aura
 type: plugin
-version: 2.1.1
+version: 2.1.2
 description: Automatically add meta tags and structured data to your pages for visually appealing and informative search results and social media sharing.
 icon: code
 author:
@@ -88,6 +88,8 @@ form:
       type: text
       size: large
       label: URL
+      help: 'Example: https://example.com'
+      placeholder: https://example.com
       validate:
         required: true
     org-logo:
